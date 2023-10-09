@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #ff784f;
+}
+.wrapper{ 
+    width: min(380px, 90%);
+    padding: 35px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 2opx rgba(0, 0, 0, 1);
+}
+
+.wrapper h2{
+    font-size: 25px;
+    font-weight: 600;
+    color:#186F65;
+}
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form input{
+    width: 100%;
+    height: 56px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #333;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.wrapper form input:focus{
+    border: 1px solid #ff784f;
+}
+.wrapper form input::placeholder{
+    font-size: 17px;
+    color: #777;
+}
+
+.wrapper form a{
+    float: left;
+    font-size: 16px;
+    color: #ff784f;
+    font-weight: 600;
+    text-decoration: none;
+}
+.wrapper form a:hover{
+    text-decoration: underline;
+}
+.wrapper form button{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #ff784f;
+}
+.wrapper form button:hover{
+    background: #ff784fe3;
+}
+
+.wrapper form p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.wrapper form p a{
+    float: unset;
+}
+
+@media screen and (max-width: 350px) {
+    .wrapper form input{
+        height: 48px;
+    }
+    .wrapper form a{
+        font-size: 14px;
+    }
+    .wrapper form button{
+        height: 42px;
+        font-size: 14px;
+    }
+}
